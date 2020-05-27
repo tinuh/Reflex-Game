@@ -13,13 +13,13 @@
 
         <!-- Main Bar for the Game -->
         <div class="progress">
-          <div class="progress-bar bg-danger" role="progressbar" style="width: 0%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-          <div class="progress-bar bg-success" role="progressbar" style="width: 2%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-          <div class="progress-bar bg-danger" role="progressbar" style="width: 98%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+          <div class="progress-bar bg-danger" id = "leftbar" role="progressbar" style="width: 5%" aria-valuemin="0" aria-valuemax="100"></div>
+          <div class="progress-bar bg-success" id = "pebble" role="progressbar" style="width: 2%" aria-valuemin="0" aria-valuemax="100"></div>
+          <div class="progress-bar bg-danger" id = "rightbar" role="progressbar" style="width: 95%" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
 
         <!-- Stop Button -->
-        <center><button class="btn btn-outline-light btn-lg">Stop</button></center>
+        <center><button onclick="stop();" class="btn btn-outline-light btn-lg">Stop</button></center>
 
         <!-- Popup for instructions -->
         <div class="modal fade modal-dialog modal-dialog-centered" id="instructions" tabindex="-1" role="dialog" aria-labelledby="instructionslabel" aria-hidden="true">
