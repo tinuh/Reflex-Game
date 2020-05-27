@@ -15,14 +15,14 @@ function init(){
 function stop(){
      clearInterval(interval);
      if (moving) {
-          if (forward) {
+          /* if (forward) {
                leftbar.style.width = String(parseInt(leftbar.style.width.slice(0, -1)) - 24) + "%";
                rightbar.style.width = String(parseInt(rightbar.style.width.slice(0, -1)) + 24) + "%";
           }
           else{
                leftbar.style.width = String(parseInt(leftbar.style.width.slice(0, -1)) + 24) + "%";
                rightbar.style.width = String(parseInt(rightbar.style.width.slice(0, -1)) - 24) + "%";
-          }
+          } */
           moving = false;
           window.document.getElementById('stop-btn').innerHTML = "Try again";
           var stat = window.document.getElementById('stat')
