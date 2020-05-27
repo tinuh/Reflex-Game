@@ -3,7 +3,6 @@ var forward = true;
 var leftbar = window.document.getElementById('leftbar');
 var pebble = window.document.getElementById('pebble');
 var rightbar = window.document.getElementById('rightbar');
-var debug = window.document.getElementById('debug');
 var interval;
 var moving = false;
 
@@ -19,12 +18,10 @@ function stop(){
           if (forward) {
                leftbar.style.width = String(parseInt(leftbar.style.width.slice(0, -1)) - 24) + "%";
                rightbar.style.width = String(parseInt(rightbar.style.width.slice(0, -1)) + 24) + "%";
-               debug.innerHTML = leftbar.style.width.slice(0, -1);
           }
           else{
                leftbar.style.width = String(parseInt(leftbar.style.width.slice(0, -1)) + 24) + "%";
                rightbar.style.width = String(parseInt(rightbar.style.width.slice(0, -1)) - 24) + "%";
-               debug.innerHTML = leftbar.style.width.slice(0, -1);
           }
           moving = false;
           window.document.getElementById('stop-btn').innerHTML = "Try again";
@@ -55,7 +52,6 @@ function move(){
           if (parseInt(rightbar.style.width.slice(0, -1)) === 0){
                forward = false;
           }
-          debug.innerHTML = leftbar.style.width.slice(0, -1);
      }
      else{
           leftbar.style.width = String(parseInt(leftbar.style.width.slice(0, -1)) - 1) + "%";
@@ -63,6 +59,5 @@ function move(){
           if (parseInt(leftbar.style.width.slice(0, -1)) === 0){
                forward = true;
           }
-          debug.innerHTML = leftbar.style.width.slice(0, -1);
      }
 }
