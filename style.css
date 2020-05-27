@@ -1,0 +1,18 @@
+body{
+    margin-top: 20px;
+    background:linear-gradient(90deg,#03827b,#c45a21);
+}
+
+.heading{
+    color: #ffffff;
+    text-align: center;
+}
+
+.link{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.link:hover{
+    text-decoration: none;
+    color: #ed594e;
+}
