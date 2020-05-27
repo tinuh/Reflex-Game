@@ -1,11 +1,14 @@
 body{
     margin-top: 20px;
     background:linear-gradient(90deg,#03827b,#c45a21);
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .heading{
     color: #ffffff;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .link{
@@ -15,4 +18,8 @@ body{
 .link:hover{
     text-decoration: none;
     color: #ed594e;
+}
+
+.progress{
+    margin-bottom: 20px;
 }
