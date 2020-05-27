@@ -9,7 +9,7 @@
         <title>Reflex Game</title>
     </head>
     <body onload="showinstructions();">
-        <h1 class = "heading">Reflex Game</h1>
+        <h1 class = "heading">Reflex Game</h1><h1 id = "debug">5</h1>
 
         <!-- Main Bar for the Game -->
         <div class="progress">
@@ -19,7 +19,7 @@
         </div>
 
         <!-- Stop Button -->
-        <center><button onclick="stop();" class="btn btn-outline-light btn-lg">Stop</button></center>
+        <center><button onclick="stop();" id = "stop-btn" class="btn btn-outline-light btn-lg">Stop</button></center>
 
         <!-- Popup for instructions -->
         <div class="modal fade modal-dialog modal-dialog-centered" id="instructions" tabindex="-1" role="dialog" aria-labelledby="instructionslabel" aria-hidden="true">
@@ -27,7 +27,7 @@
             <div class="modal-content">
               <div class="modal-header">
                 <h4 class="modal-title" id="exampleModalLabel">Instructions</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <button type="button" class="close" onclick="init();" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
@@ -44,6 +44,10 @@
               </div>
             </div>
           </div>
+        </div>
+
+        <div id = "stat">
+
         </div>
 
         <!-- Footer -->
