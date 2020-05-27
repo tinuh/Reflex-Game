@@ -16,16 +16,16 @@ function stop(){
      clearInterval(interval);
      if (moving) {
           /* if (forward) {
-               leftbar.style.width = String(parseInt(leftbar.style.width.slice(0, -1)) - 24) + "%";
-               rightbar.style.width = String(parseInt(rightbar.style.width.slice(0, -1)) + 24) + "%";
+               leftbar.style.width = String(parseInt(leftbar.style.width.slice(0, -1)) - 100) + "%";
+               rightbar.style.width = String(parseInt(rightbar.style.width.slice(0, -1)) + 100) + "%";
           }
           else{
-               leftbar.style.width = String(parseInt(leftbar.style.width.slice(0, -1)) + 24) + "%";
-               rightbar.style.width = String(parseInt(rightbar.style.width.slice(0, -1)) - 24) + "%";
+               leftbar.style.width = String(parseInt(leftbar.style.width.slice(0, -1)) + 100) + "%";
+               rightbar.style.width = String(parseInt(rightbar.style.width.slice(0, -1)) - 100) + "%";
           } */
           moving = false;
-          window.document.getElementById('stop-btn').innerHTML = "Try again";
-          var stat = window.document.getElementById('stat')
+          window.document.getElementById('stop-btn').innerHTML = "Keep Going";
+          var stat = window.document.getElementById('stat');
           var element = document.createElement("h1");
           element.style.textAlign = "center";
           element.style.marginTop = "20px";
@@ -46,7 +46,7 @@ function stop(){
 }
 
 function move(){
-     if (forward){
+     if(forward){
           leftbar.style.width = String(parseInt(leftbar.style.width.slice(0, -1)) + 1) + "%";
           rightbar.style.width = String(parseInt(rightbar.style.width.slice(0, -1)) - 1) + "%";
           if (parseInt(rightbar.style.width.slice(0, -1)) === 0){
